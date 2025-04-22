@@ -47,3 +47,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
+
+<!-- 📝 Registration form starts here -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form method="POST" action="">
+        <input type="text" name="fullname" placeholder="Full Name" required><br><br>
+        <input type="email" name="email" placeholder="Email Address" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- 👇 Login link here -->
+    <p>Already have an account? <a href="login.php">Login here</a></p>
+</body>
+</html>
